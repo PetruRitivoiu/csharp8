@@ -33,7 +33,7 @@ namespace NullableTypes
         //Both the list and the items in it are allowed to be null (C# 7.0)
         //private List<Book?>? bookList4;
 
-        private IBookIndexer BookIndexer { set; get; }
+        private IBookIndexer? BookIndexer { set; get; } //Removing ? would make the null-checking below unnecessary
 
         private Dictionary<string, Book> BooksDictionary { get; set; }
 
@@ -47,7 +47,7 @@ namespace NullableTypes
 
         public void IndexAllBooks()
         {
-            //if (BookIndexer != null)
+            if (BookIndexer != null) //commenting this line would create a warning since BookIndexer may be null
             {
                 BookList.ForEach((currentBook) =>
                 {
@@ -63,45 +63,13 @@ namespace NullableTypes
                 books.Add(currentBook);
             });
         }
-
-        #region powerpoint
-
-#nullable disable
-        public object MaybeNull() => null; //This could be from a C# 7.0 library
-#nullable enable
-
-        public string MaybeNullToString() => MaybeNull().ToString(); //no warning
-
-        public string? MaybeString() => "string";
-
-#nullable safeonly
-        public string Test_MaybeString1()
-        {
-            string maybeNull = MaybeString();
-            string maybeNullToString = maybeNull.ToString(); //Warning: Dereference of a possibly null reference
-
-            return maybeNullToString;
-        }
-
-#nullable enable
-        public string Test_MaybeString2()
-        {
-            string maybeNull = MaybeString(); //Warning: Converting null literal or possible null value to non-nullable type
-            string maybeNullToString = maybeNull.ToString(); //Warning: Dereference of a possibly null reference
-
-            return maybeNullToString;
-        }
-
-        #endregion
     }
-
-
 
     class Program
     {
         static void Main(string[] args)
         {
-            //BookStore bookStore = new BookStore(null); //add the null forgiving operator
+            BookStore nullForgiving_bookStore = new BookStore(null!); //add the null forgiving operator; Don't do that..
             BookStore bookStore = new BookStore(new BookIndexer());
 
             List<Book> books = new List<Book>();
