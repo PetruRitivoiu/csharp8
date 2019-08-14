@@ -13,17 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpLang7", "CSharpLang7"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpLang8", "CSharpLang8", "{4AED8D9C-2A98-467A-9AD5-D4D6B9A6E40C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ranges", "Ranges\Ranges.csproj", "{5693BB39-819F-46BE-B6E6-F667C849EE1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ranges", "CSharpLang8\Ranges\Ranges.csproj", "{5693BB39-819F-46BE-B6E6-F667C849EE1F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReferenceTypes", "NullableTypes\NullableReferenceTypes.csproj", "{DB37DE94-BEED-4EF3-8DEF-EB5192700648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReferenceTypes", "CSharpLang8\NullableTypes\NullableReferenceTypes.csproj", "{DB37DE94-BEED-4EF3-8DEF-EB5192700648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingDeclarations", "UsingDeclarations\UsingDeclarations.csproj", "{06E7D93E-AA72-479D-B161-CB767C2372EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingDeclarations", "CSharpLang8\UsingDeclarations\UsingDeclarations.csproj", "{06E7D93E-AA72-479D-B161-CB767C2372EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticLocalFunctions", "StaticLocalFunctions\StaticLocalFunctions.csproj", "{CE3FF828-4A68-4D3E-8D4C-1552CF94CF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticLocalFunctions", "CSharpLang8\StaticLocalFunctions\StaticLocalFunctions.csproj", "{CE3FF828-4A68-4D3E-8D4C-1552CF94CF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncStreams", "AsyncStreams\AsyncStreams.csproj", "{3D71AB45-B9DF-4636-AC8F-1C777F634D83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncStreams", "CSharpLang8\AsyncStreams\AsyncStreams.csproj", "{3D71AB45-B9DF-4636-AC8F-1C777F634D83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadonlyMembers", "ReadonlyMembers\ReadonlyMembers.csproj", "{D50193B1-1049-4EA0-AF72-8B86921E3B0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadonlyMembers", "CSharpLang8\ReadonlyMembers\ReadonlyMembers.csproj", "{D50193B1-1049-4EA0-AF72-8B86921E3B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultInterfaceMethods", "CSharpLang8\DefaultInterfaceMethods\DefaultInterfaceMethods.csproj", "{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{D50193B1-1049-4EA0-AF72-8B86921E3B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D50193B1-1049-4EA0-AF72-8B86921E3B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D50193B1-1049-4EA0-AF72-8B86921E3B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{CE3FF828-4A68-4D3E-8D4C-1552CF94CF29} = {4AED8D9C-2A98-467A-9AD5-D4D6B9A6E40C}
 		{3D71AB45-B9DF-4636-AC8F-1C777F634D83} = {4AED8D9C-2A98-467A-9AD5-D4D6B9A6E40C}
 		{D50193B1-1049-4EA0-AF72-8B86921E3B0A} = {4AED8D9C-2A98-467A-9AD5-D4D6B9A6E40C}
+		{D6A082AA-7B96-4F57-ADBE-E172D37C2FCB} = {4AED8D9C-2A98-467A-9AD5-D4D6B9A6E40C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD79C9C6-1E56-485E-B72F-97C69C3E9A93}

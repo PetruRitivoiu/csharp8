@@ -33,4 +33,3 @@ C:\Users\thinkpad-e560\Source\Repos\CSharpLangPresetation\CSharpLang7\PatternMat
 C:\Users\thinkpad-e560\Source\Repos\CSharpLangPresetation\CSharpLang7\PatternMatching\obj\Debug\netcoreapp3.0\PatternMatching.AssemblyInfo.cs
 C:\Users\thinkpad-e560\Source\Repos\CSharpLangPresetation\CSharpLang7\PatternMatching\obj\Debug\netcoreapp3.0\PatternMatching.dll
 C:\Users\thinkpad-e560\Source\Repos\CSharpLangPresetation\CSharpLang7\PatternMatching\obj\Debug\netcoreapp3.0\PatternMatching.pdb
-C:\Users\thinkpad-e560\Source\Repos\CSharpLangPresetation\CSharpLang7\PatternMatching\obj\Debug\netcoreapp3.0\PatternMatching.csprojAssemblyReference.cache
