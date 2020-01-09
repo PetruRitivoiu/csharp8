@@ -9,7 +9,7 @@ namespace UsingDeclarations
         {
             using var httpClient = new HttpClient();
 
-            var res = await httpClient.GetAsync("https://google.com");
+            using var res = await httpClient.GetAsync("https://google.com");
         }
     }
 }
