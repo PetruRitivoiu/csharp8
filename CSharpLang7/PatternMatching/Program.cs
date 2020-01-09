@@ -54,7 +54,7 @@ namespace PatternMatching
             #region The more elegant way
             switch (vehicle)
             {
-                case Bus v when v.BusLine != "783":
+                case Bus v when v.BusLine != "783": //Mind the recursive pattern here
                     Console.WriteLine($"It's the {v.BusLine} bus"); // => 381
                     break;
                 case Motorcycle v:

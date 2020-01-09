@@ -101,6 +101,11 @@ namespace Recursive_Patterns
             #endregion
         };
 
+
+        //A little State Machine example
+        //You can consider the "first" argument to be the state
+        //And the "second" argument to be the command
+
         public static string RockPaperScissors(string first, string second)
             => (first, second) switch
         {

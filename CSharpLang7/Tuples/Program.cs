@@ -11,7 +11,9 @@ namespace Tuples
 
         static void Main(string[] args)
         {
-            #region Implicitly typed tuple initialization
+            //Deconstruction of tuples was introduced in C# 7.0
+
+            #region Implicitly typed tuple deconstruction
             var point = GetCoordinates();
 
             Console.WriteLine("Implicitly typed tuple initialization");
@@ -19,7 +21,7 @@ namespace Tuples
             Console.WriteLine($"{nameof(point.y)}: {point.y}"); // => 72
             #endregion
 
-            #region Strongly typed tuple initialization
+            #region Strongly typed tuple deconstruction
             (int y1, int x1) point1  = GetCoordinates(); // Positional matching, NOT name matching
 
             Console.WriteLine("Strongly typed tuple initialization");
@@ -42,7 +44,6 @@ namespace Tuples
             Console.WriteLine($"{nameof(x2)}: {x2}"); // => 34
             Console.WriteLine($"{nameof(y2)}: {y2}"); // => 72
             #endregion
-
         }
     }
 }
