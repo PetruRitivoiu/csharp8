@@ -41,8 +41,8 @@ namespace Tuples
             var (x3, y3) = GetCoordinates();
 
             Console.WriteLine("Implicitly typed deconstruction");
-            Console.WriteLine($"{nameof(x2)}: {x2}"); // => 34
-            Console.WriteLine($"{nameof(y2)}: {y2}"); // => 72
+            Console.WriteLine($"{nameof(x3)}: {x3}"); // => 34
+            Console.WriteLine($"{nameof(y3)}: {y3}"); // => 72
             #endregion
         }
     }
